@@ -16,28 +16,32 @@ var crystal4 = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)]
     console.log('crystal4 = %d', crystal4);
 
 var chosenNumber = randomNumbers[Math.floor(Math.random() * randomNumbers.length)];
+    $("#random-number").html(chosenNumber);
     console.log('chosenNumber2 = %d', chosenNumber);
 
 //function numberDisplay(){}
 //function hiddenNumbers(){}
 function resetGame(){
     totalScore = 0;
+    $("#total-body").html(totalScore);
     crystal1 = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)];
     crystal2 = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)];
     crystal3 = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)];
     crystal4 = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)];
     chosenNumber = randomNumbers[Math.floor(Math.random() * randomNumbers.length)];
+        $("#random-number").html(chosenNumber);
 }
 
 function matchingScore(){
     if (chosenNumber == totalScore){
         console.log('You win!');
         wins++;
-
+        $("#wincount").html('Wins:' + wins);
         resetGame();
     } else if (chosenNumber < totalScore){
         console.log('You lose!');
         loss++;
+        $("#losscount").html('Losses:' + loss);
         resetGame();
     }
 }
@@ -46,22 +50,26 @@ function matchingScore(){
     $("#crystal-1").on('click', function(){
         totalScore += crystal1;
         console.log('totalScore = %d', totalScore);
+        $("#total-body").html(totalScore);
         matchingScore();
     });
 
     $("#crystal-2").on('click', function(){
         totalScore += crystal2;
         console.log('totalScore = %d', totalScore);
+        $("#total-body").html(totalScore);
         matchingScore();
     })
     $("#crystal-3").on('click', function(){
         totalScore += crystal3;
         console.log('totalScore = %d', totalScore);
+        $("#total-body").html(totalScore);
         matchingScore();
     })
     $("#crystal-4").on('click', function(){
         totalScore += crystal4;
         console.log('totalScore = %d', totalScore);
+        $("#total-body").html(totalScore);
         matchingScore();
     })
         //if a number is already on the screen, concatenate it with the clickedNumber on the screen
