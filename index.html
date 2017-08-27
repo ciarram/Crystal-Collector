@@ -5,6 +5,7 @@
     <title>Crystal Game</title>
     <link rel="stylesheet", type="text/css", href="assets/css/reset.css">
     <link rel="stylesheet", type="text/css", href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <h1>Crystals Collector!</h1>
@@ -15,17 +16,21 @@
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
 
-    <div id="random-number"></div>
+    <div id="random-number">Random Number</div>
     
     <div id="win-loss"></div>
+        Wins: 0
+        <br>
+        Losses: 0
     
-    <div class="crystals"></div>
-    <div class="crystals"></div>
-    <div class="crystals"></div>
-    <div class="crystals"></div>
+    <div class="crystals" id="crystal-1">Crystal 1</div>
+    <div class="crystals" id="cystal-2">Crystal 2</div>
+    <div class="crystals" id="crystal-3">Crystal 3</div>
+    <div class="crystals" id="crystal-4">Crystal 4</div>
 
     <div class="total-score"></div>
         <div id="total-head"></div>
+        Your total score is:
         <div id="total-body"></div>
 </body>
 </html>
