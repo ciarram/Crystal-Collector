@@ -5,32 +5,34 @@
     <title>Crystal Game</title>
     <link rel="stylesheet", type="text/css", href="assets/css/reset.css">
     <link rel="stylesheet", type="text/css", href="assets/css/style.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
     <h1>Crystals Collector!</h1>
-
         <p>You will be given a random number at the start of the game.</p>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
         <p>You win the game by matching your total score to the random number automatically generated. You lose the game if your total score goes above the random number.</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
-
+    <br>
     <div id="random-number">Random Number</div>
     
-    <div id="win-loss"></div>
-        Wins: 0
-        <br>
-        Losses: 0
+    <div class="win-loss"></div>
+        <div id="wincount">Wins: 0</div>
+        <div id="losscount">Losses: 0</div>
     
-    <div class="crystals" id="crystal-1">Crystal 1</div>
-    <div class="crystals" id="cystal-2">Crystal 2</div>
-    <div class="crystals" id="crystal-3">Crystal 3</div>
-    <div class="crystals" id="crystal-4">Crystal 4</div>
-
+    
+    <button type="button" class="btn btn-outline-secondary" src="http://pngimg.com/uploads/ruby/ruby_PNG48.png?i=1" id="crystal-1">Crystal 1</button>
+    <button type="button" class="btn btn-outline-secondary" src="http://i39.tinypic.com/igaekx.png" id="crystal-2">Crystal 2</button>
+    <button type="button" class="btn btn-outline-secondary" src="http://media.istockphoto.com/vectors/gem-stone-vector-id637386964" id="crystal-3">Crystal 3</button>
+    <button type="button" class="btn btn-outline-secondary" src="https://pbs.twimg.com/profile_images/747171995876532224/CpN-Mf2_.jpg" id="crystal-4">Crystal 4</button>
+    <br>
     <div class="total-score"></div>
         <div id="total-head"></div>
         Your total score is:
         <div id="total-body"></div>
+
 </body>
 </html>
