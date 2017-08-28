@@ -7,16 +7,19 @@
     <link rel="stylesheet", type="text/css", href="assets/css/style.css">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
     <section>CrystalsCollector!</section>
     <br>
         <div class="rules">
         <p>You will be given a random number at the start of the game.</p>
+        <br>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <br>
         <p>You win the game by matching your total score to the random number automatically generated. You lose the game if your total score goes above the random number.</p>
+        <br>
         <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
     <br>
@@ -28,14 +31,13 @@
         <div id="losscount">Losses: 0</div>
     </div>
     <br>
-    <button type="button" class="btn btn-outline-light" src="../images/ruby_PNG48.png" id="crystal-1">Crystal 1</button>
-    <button type="button" class="btn btn-outline-light" id="crystal-2">Crystal 2</button>
-    <button type="button" class="btn btn-outline-light" id="crystal-3">Crystal 3</button>
-    <button type="button" class="btn btn-outline-light" id="crystal-4">Crystal 4</button>
+    <img src="assets/images/ruby_PNG48.png" type="button" id="crystal-1"></button>
+    <img src="assets/images/diamond_gem.jpg" type="button" id="crystal-2"></button>
+    <img src="assets/images/yellow_gem.jpg" type="button" id="crystal-3"></button>
+    <img src="assets/images/emerald_gem.jpg" type="button" id="crystal-4"></button>
     <br>
-    <div class="total-score">
-        <div id="total-head"></div>
-        Your total score is:
+        <div id="total-head">Your total score is:</div>
+        <br>
         <div id="total-body"></div>
     </div>
 </body>
