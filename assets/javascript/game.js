@@ -19,8 +19,7 @@ var chosenNumber = randomNumbers[Math.floor(Math.random() * randomNumbers.length
     $("#random-number").html(chosenNumber);
     console.log('chosenNumber2 = %d', chosenNumber);
 
-//function numberDisplay(){}
-//function hiddenNumbers(){}
+
 function resetGame(){
     totalScore = 0;
     $("#total-body").html(totalScore);
