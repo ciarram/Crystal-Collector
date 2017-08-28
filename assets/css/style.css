@@ -1,3 +1,35 @@
+body{
+    background-image: url("../images/wormz.png");
+}
+section{
+    width: 400px;
+    border: 1px;
+    background-color: orange;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #F8F4F4;
+    font-size: 24px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    font-size: 16px;
+}
+.rules{
+    width: 550px;
+    height: 400px;
+    background-color: peachpuff;
+    border: 1px;
+    padding: 15px;
+    margin-left: 20px;
+}
+#random-number{
+
+}
 img{
     height: 50px;
     width: 50px;
