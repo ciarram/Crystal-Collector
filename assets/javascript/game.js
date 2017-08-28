@@ -72,18 +72,6 @@ function matchingScore(){
         $("#total-body").html(totalScore);
         matchingScore();
     })
-        //if a number is already on the screen, concatenate it with the clickedNumber on the screen
-        //else display it by itself
-//if the clickedNumber == chosenNumber, wins goes up by one and the game automatically starts over  with a new chosenNumber and new clickedNumbers for the crytals
-//else if clickedNumber != chosenNumber, continue the game
-//else if the clickedNuumber goes over the chosenNumber, loss goes up by one and the game automatically starts over with a new chosenNumber and new clickedNumbers for the crytals
-//Total score displys 0 at the beginning of the game and everytime it starts over after a win or loss
-//when one of the crystals is clicked, the number is displayed in total-body
-    //everytime a crystal is clicked after that, the total score displays the concatenated numbers on the screen
-//if the total score == chosenNumber, the win goes up by one and the game starts over
-//else if the total score != chosenNumber, continue the game
-//else if the total score goes over the chosenNumber, loss goes up by one and the game starts over with the total-body displaying 0
-
-
+        
 
 })
