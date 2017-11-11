@@ -1,4 +1,4 @@
-# week-4-game
+# Crystal-Collector
 
 In this game, the computer chooses a random number at the beginning. The objective of the player is to click on the crystal buttons to add up their total score to the computer's number. 
 
